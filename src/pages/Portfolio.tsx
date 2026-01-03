@@ -24,17 +24,33 @@ export default function Portfolio() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#050b1a] via-[#020617] to-black animate-pulse opacity-80" />
 
       <main className="max-w-7xl mx-auto px-6 py-20">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-6xl font-bold mb-4"
-        >
-          ArsyNox Labs
-        </motion.h1>
-        <p className="text-gray-400 mb-12 max-w-xl">
-          Building sleek, fast, and experimental web tools with a focus on performance and modern design.
-        </p>
+        {/* Header */}
+        <div className="mb-14">
+          {/* Logo */}
+          <motion.img
+            src="/logo.png"
+            alt="ArsyNox Labs Logo"
+            className="h-16 w-16 mb-6 rounded-2xl bg-white/5 backdrop-blur border border-white/10 shadow-lg"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+          />
+
+          {/* Title */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-6xl font-bold mb-4"
+          >
+            ArsyNox Labs
+          </motion.h1>
+
+          {/* Subtitle */}
+          <p className="text-gray-400 max-w-xl">
+            Building sleek, fast, and experimental web tools with a focus on performance and modern design.
+          </p>
+        </div>
 
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -47,8 +63,14 @@ export default function Portfolio() {
               whileHover={{ scale: 1.03 }}
               className="relative rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-6 shadow-lg hover:shadow-cyan-500/20 transition"
             >
-              <span className="text-xs uppercase tracking-wide text-cyan-400">{p.tag}</span>
-              <h3 className="text-xl font-semibold mt-2 mb-4">{p.name}</h3>
+              <span className="text-xs uppercase tracking-wide text-cyan-400">
+                {p.tag}
+              </span>
+
+              <h3 className="text-xl font-semibold mt-2 mb-4">
+                {p.name}
+              </h3>
+
               <a
                 href={p.url}
                 target="_blank"
@@ -68,7 +90,10 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="border-t border-white/10 mt-20">
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500">© {new Date().getFullYear()} ArsyNox Labs</p>
+          <p className="text-sm text-gray-500">
+            © {new Date().getFullYear()} ArsyNox Labs
+          </p>
+
           <div className="flex gap-6">
             <a
               href="mailto:admin@arsyoxhash.dpdns.org"
@@ -76,6 +101,7 @@ export default function Portfolio() {
             >
               <Mail size={18} /> Email
             </a>
+
             <a
               href="https://t.me/codexhelps_bot"
               target="_blank"
