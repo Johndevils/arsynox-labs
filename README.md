@@ -1,8 +1,3 @@
-Here is a **clean, professional `README.md`** for your project.
-You can **copy–paste it directly** into `README.md` in your GitHub repo.
-
----
-
 # 🚀 ArsyNox Labs — Portfolio
 
 A **high-performance, modern portfolio website** for **ArsyNox Labs**, showcasing experimental web tools and services with a sleek **dark UI**, **glassmorphism**, and **bento-style layout**.
