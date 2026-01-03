@@ -5,7 +5,7 @@ import { projects } from "./data/projects";
 
 export default function App() {
   return (
-    <div className="min-h-screen text-white relative overflow-hidden">
+    <div className="min-h-screen text-white relative overflow-hidden font-inter">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0a1025] via-[#050816] to-black" />
@@ -13,18 +13,39 @@ export default function App() {
       </div>
 
       <main className="max-w-7xl mx-auto px-6 py-20">
-        <motion.h1
+        {/* Header with Logo */}
+        <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-6xl font-semibold text-center mb-4"
+          className="flex flex-col items-center mb-16"
         >
-          ARSYNOX LABS
-        </motion.h1>
+          {/* Logo */}
+          <motion.img
+            src="/logo.png"
+            alt="ArsyNox Labs Logo"
+            className="
+              h-16 w-16 mb-4 rounded-2xl
+              bg-white/5 backdrop-blur
+              border border-white/10
+              shadow-lg
+            "
+            initial={{ scale: 0.85 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.4 }}
+          />
 
-        <p className="text-center text-white/60 mb-14">
-          Experimental Web Infrastructure & Automation
-        </p>
+          {/* Title */}
+          <h1 className="text-4xl md:text-6xl font-semibold text-center mb-2">
+            ARSYNOX LABS
+          </h1>
 
+          {/* Subtitle */}
+          <p className="text-center text-white/60">
+            Experimental Web Infrastructure & Automation
+          </p>
+        </motion.div>
+
+        {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (
             <ProjectCard key={p.name} {...p} />
