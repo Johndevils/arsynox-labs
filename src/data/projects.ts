@@ -1,0 +1,15 @@
+export const projects = [
+  { name: "TgImg", url: "https://tgimg.arsynoxlabs.dpdns.org", tag: "Utility" },
+  { name: "ArsyHost", url: "https://arsyhost.pages.dev", tag: "Hosting" },
+  { name: "Thread Viewer", url: "https://thread-profile-viewer.onrender.com", tag: "Tools" },
+  { name: "Snaphost", url: "https://codexart-lab.github.io/Snaphost", tag: "Hosting" },
+  { name: "ArsyNox Mail", url: "https://cinescope.dpdns.org", tag: "Email" },
+  { name: "Tg Img Host", url: "https://telegram-image-hosting.pages.dev", tag: "Hosting" },
+  { name: "ArsyStream", url: "https://arsystream.metaspace.workers.dev", tag: "Streaming" },
+  { name: "CloudArsy Mail", url: "https://mail.cloudarsy.qzz.io", tag: "Email" },
+  { name: "ArsyChat", url: "https://arsychat.pages.dev", tag: "Chat" },
+  { name: "Img Gen Bot", url: "https://t.me/InsomniumBot", tag: "Bot" },
+  { name: "URL Shortener", url: "https://t.me/arsytxt_bot", tag: "Bot" },
+  { name: "Drive DL Bot", url: "https://t.me/drive2downloader_bot", tag: "Bot" },
+  { name: "Webhook Manager", url: "https://tgwebhook.pages.dev", tag: "Dev Tool" },
+];
