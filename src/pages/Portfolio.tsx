@@ -7,7 +7,7 @@ import { ExternalLink, Mail, Send } from "lucide-react";
 
 const projects = [
   // Image Hosting
-  { name: "TgImg", url: "https://tgimg.arsynoxlabs.dpdns.org", tag: "Hosting" },
+  { name: "TgImg", url: "https://tgimg.arsynox.indevs.in", tag: "Hosting" },
   { name: "ArsyHost", url: "https://arsyhost.pages.dev", tag: "Hosting" },
   { name: "Snaphost", url: "https://codexart-lab.github.io/Snaphost", tag: "Hosting" },
   { name: "Tg Img Host", url: "https://telegram-image-hosting.pages.dev", tag: "Hosting" },
