@@ -137,13 +137,4 @@ This project is open-source and available under the **MIT License**.
 Designed & built by **ArsyNox Labs**
 Focused on **performance, modern UI, and experimentation**.
 
----
-
-If you want, I can also generate:
-
-* GitHub **repo description & tags**
-* **SEO / OpenGraph** setup
-* **Screenshots section**
-* **Badges** (Vercel, Cloudflare, license, etc.)
-
-Just tell me 👍
+-------------------×××××××××----------------------
